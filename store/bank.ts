@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia'
+/* import { defineStore } from 'pinia'
 
 type Transaction = {
     id: number,
@@ -57,4 +57,4 @@ export const useBankAccountStore = defineStore('bank', {
             return this.pendingTransactions.map((t) => t.amount).reduce((acc, curr) => acc + curr, 0)
         }
     }
-})
+}) */

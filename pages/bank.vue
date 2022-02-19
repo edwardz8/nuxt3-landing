@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useBankAccountStore } from "../stores/bank";
+/* import { useBankAccountStore } from "@/stores/bank";
 
 const store = useBankAccountStore();
 
@@ -9,11 +9,11 @@ store.$onAction(({ name, store, after }) => {
       store.processTransaction(result);
     }
   });
-});
+}); */
 </script>
 
 <template>
-  <div>
+ <!--  <div>
     <h3>Balance: {{ store.runningBalance }}</h3>
     <h3>Pending: {{ store.pendingAmount }}</h3>
 
@@ -27,5 +27,5 @@ store.$onAction(({ name, store, after }) => {
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
 </template>
