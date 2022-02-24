@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import products from "../products.json";
-const modal = ref();
+
+const modal = ref<InstanceType<typeof Sidebar> | null>(null);
+
 const openModal = () => {
-  modal.value.open();
+  modal.value?.open();
 };
+
 </script>
 
 <template>
@@ -15,6 +18,6 @@ const openModal = () => {
       <ProductCard v-for="product in products" :key="product.id" :product="product" />
     </div>
     <button @click="openModal">Open</button>
-    <!-- <Sidebar ref="modal" /> -->
+    <Sidebar ref="modal" />
   </div>
 </template>
